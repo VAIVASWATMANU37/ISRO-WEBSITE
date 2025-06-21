@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRO Website</title>
+    <style>
+        body {
+            
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: blue;
+    font-style: oblique;
+}
+
+header {
+    background-color: #ff6600;
+    padding: 15px;
+    color: black;
+    font-weight: bolder;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background:linear-gradient(white,green,green,green,green);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+p{
+    margin-top: 0; 
+     background:linear-gradient(white,white,white,white,white,white,white,)
+}
+h2{
+    height: 74px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background :linear-gradient(#ff6600,white);
+}
+h3{
+    margin-top: 0;
+    margin-bottom: 0%;
+    color: white;
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to ISRO</h1>
+        <nav>
+            <ul id="nav-list"></ul>
+        </nav>
+        <a href="http://127.0.0.1:3000/W/NAVIGATION PAGE.HTM">Go to navigation page</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>Exploring the Universe with ISRO</h2>
+            <p>Indian Space Research Organisation (ISRO) has established itself as a global space leader through 
+                groundbreaking missions and technological innovations. ISRO's Moon and Mars explorations, including 
+                Chandrayaan and Mangalyaan, have expanded scientific knowledge beyond Earth, while upcoming projects 
+                like Gaganyaan and Shukrayaan aim to push boundaries even further. India’s navigation systems 
+                (NavIC), telecommunications satellites (GSAT), and remote sensing (Cartosat & RISAT) support vital 
+                sectors, ensuring national security, disaster management, and environmental sustainability. With a 
+                strong emphasis on AI, quantum technology, and robotics, ISRO continues to evolve, integrating 
+                advanced computing and automation to enhance space research, satellite operations, and deep-space 
+                communication.
+                Beyond national achievements, ISRO has cultivated global partnerships with NASA, ESA, JAXA, and 
+                CNES, collaborating on joint missions like NISAR and TRISHNA while contributing to space 
+                sustainability and satellite technology advancements. Its human spaceflight program, led by 
+                Gaganyaan, marks India's entry into crewed missions, setting the foundation for a future space 
+                station by 2035. Furthermore, ISRO plays a crucial role in Earth observation and environmental 
+                monitoring, providing critical data for agriculture, urban planning, and climate studies through 
+                hyperspectral imaging and satellite-based weather analysis. By addressing both national and 
+                international space challenges, ISRO strengthens its scientific contributions and technological 
+                leadership. Looking ahead, ISRO envisions a future of interplanetary exploration and deep-space 
+                missions, with plans for Mangalyaan-2, Chandrayaan-4, and Venus exploration. Innovations in space 
+                debris mitigation, eco-friendly propulsion systems, and AI-driven surveillance satellites 
+                demonstrate ISRO's commitment to sustainability. India's quantum-based encryption and satellite 
+                security advancements* ensure robust communication infrastructure, while the development of 
+                reusable launch vehicles and high-throughput satellites propels space research forward. As ISRO 
+                continues to refine its strategies, its pioneering spirit fuels India's ambitions to become a 
+                dominant force in space science and technology.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 ISRO Website | Developed by Vaivaswatmanu37!</p><br>
+        
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+           
+    
+
+            const navList = document.getElementById("nav-list");
+
+            pages.forEach(page => {
+                let listItem = document.createElement("li");
+                let link = document.createElement("a");
+                link.href = page.link;
+                link.textContent = page.name;
+                listItem.appendChild(link);
+                navList.appendChild(listItem);
+            });
+
+            console.log("ISRO Website Loaded Successfully!");
+            alert("ISRO Website Loaded Successfully")
+        });
+    </script>
+</body>
+</html>
