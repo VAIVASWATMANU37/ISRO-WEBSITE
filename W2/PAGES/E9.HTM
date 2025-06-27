@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        #idk{
+            padding-right: 100px;
+        }
+        #id{
+            padding-left: 7px;
+        }
+        h6{
+            text-align: left;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: glow 2s infinite alternate;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header h1 {
+            font-size: 2rem;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff004c, 0 0 20px #ff004c; }
+            to { text-shadow: 0 0 20px #ff004c, 0 0 40px #ff004c; }
+        }
+        .main-section {
+            text-align: center;
+            margin: 5rem 2rem;
+        }
+        .main-section h2 {
+            font-size: 3rem;
+            animation: slideIn 1.5s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        i{
+            color: plum;
+            display: flex;
+            animation: slideIn 1.5s ease-out;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+        }
+        .footer {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        a {
+            color: #ff4ccd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ff004c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>VAIVASWAT</h1>
+        <nav>
+             <a href="#projects">About</a>
+        </nav>
+    </header>
+    <section class="main-section" id="projects">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zKaTR2SebR0?si=yT0bs3oJsVPtLAxR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <div class="card">
+            <h3>BMW N54/N55</h3>
+            <p>The BMW N54 and N55 are both 3.0-liter turbocharged inline-six engines that marked a new era of performance for BMW, but they took slightly different engineering paths. The N54, launched in 2006, featured twin turbochargers and forged internals, making it a powerhouse for tuning and modification. It was BMW’s first mass-produced turbocharged gasoline engine and powered models like the 335i, 135i, and 535i.
+In 2009, the N55 succeeded the N54 with a single twin-scroll turbocharger, Valvetronic variable valve lift, and improved fuel injection systems. While it sacrificed some of the raw tuning potential of the N54, it offered better reliability, fuel efficiency, and lower emissions. Both engines produce similar stock power—around 300 horsepower and 400 Nm of torque—but the N54 is often favored by enthusiasts for its mod-friendly nature, while the N55 is praised for its refinement and everyday usability. Together, they represent BMW’s transition into the turbocharged performance age.
+</p>
+            <a href="https://images.contentstack.io/v3/assets/blt75c85f063ac4ae63/bltb3b4ced13d02f17c/65f927e75f6930cded1992c7/100.jpg" target="_blank" height="420px" width="360px">View Image</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <b><p><a href="http://127.0.0.1:3002/HOME.HTM">HOME</a></p></b>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        #idk{
+            padding-right: 100px;
+        }
+        #id{
+            padding-left: 7px;
+        }
+        h6{
+            text-align: left;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: glow 2s infinite alternate;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header h1 {
+            font-size: 2rem;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff004c, 0 0 20px #ff004c; }
+            to { text-shadow: 0 0 20px #ff004c, 0 0 40px #ff004c; }
+        }
+        .main-section {
+            text-align: center;
+            margin: 5rem 2rem;
+        }
+        .main-section h2 {
+            font-size: 3rem;
+            animation: slideIn 1.5s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        i{
+            color: plum;
+            display: flex;
+            animation: slideIn 1.5s ease-out;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+        }
+        .footer {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        a {
+            color: #ff4ccd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ff004c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>VAIVASWAT</h1>
+        <nav>
+             <a href="#projects">About</a>
+        </nav>
+    </header>
+    <section class="main-section" id="projects">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J7k95s0K-Kc?si=ls57Of4osV9TdrAK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <div class="card">
+            <h3>Mitsubishi 4G63T</h3>
+            <p>The Mitsubishi 4G63T is a legendary 2.0-liter turbocharged inline-four engine that earned its fame powering the iconic Lancer Evolution series from 1987 to 2007. Known for its robust cast iron block, forged internals, and high-performance potential, the 4G63T became a favorite among tuners and motorsport enthusiasts. It featured a DOHC 16-valve aluminum head, intercooler, and various turbocharger configurations across its generations, with power outputs ranging from 195 hp in early models to nearly 280 hp in later versions. Its durability, tuning flexibility, and aftermarket support have made it a cult classic in the world of performance engines.</p>
+            <a href="https://c8.alamy.com/comp/A3WGGH/heavily-modified-mitsubishi-4g63-turbocharged-engine-A3WGGH.jpg" target="_blank" height="420px" width="360px">View Image</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <b><p><a href="http://127.0.0.1:3002/HOME.HTM">HOME</a></p></b>
+    </footer>
+</body>
+</html>

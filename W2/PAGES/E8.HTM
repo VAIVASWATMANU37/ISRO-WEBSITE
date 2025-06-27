@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        #idk{
+            padding-right: 100px;
+        }
+        #id{
+            padding-left: 7px;
+        }
+        h6{
+            text-align: left;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: glow 2s infinite alternate;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header h1 {
+            font-size: 2rem;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff004c, 0 0 20px #ff004c; }
+            to { text-shadow: 0 0 20px #ff004c, 0 0 40px #ff004c; }
+        }
+        .main-section {
+            text-align: center;
+            margin: 5rem 2rem;
+        }
+        .main-section h2 {
+            font-size: 3rem;
+            animation: slideIn 1.5s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        i{
+            color: plum;
+            display: flex;
+            animation: slideIn 1.5s ease-out;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+        }
+        .footer {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        a {
+            color: #ff4ccd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ff004c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>VAIVASWAT</h1>
+        <nav>
+             <a href="#projects">About</a>
+        </nav>
+    </header>
+    <section class="main-section" id="projects">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yzJtKXtxw5k?si=q5au4abFjC0VGFrB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <div class="card">
+            <h3>Mazda BP-ZE</h3>
+            <p>The Mazda BP-ZE is a 1.8-liter DOHC inline-four engine that became a cult favorite thanks to its rev-happy nature, solid construction, and tuning potential. Introduced in the early 1990s, it featured a cast iron block, aluminum 16-valve head, and a forged crankshaft, making it both durable and responsive. With a square bore and stroke (83mm x 85mm), it produced between 128 to 146 horsepower in naturally aspirated form, and was famously used in the Mazda MX-5 Miata (NA8) and 323 Familia. The BP-ZE also included performance-minded features like piston oil squirters, a structural aluminum oil pan, and Mazda’s Variable Inertia Charging System (VICS) for improved high-RPM breathing. It’s a beloved engine among enthusiasts for its balance of reliability, simplicity, and spirited character.</p>
+            <a href="https://desk.zoho.com/DocsDisplay?zgId=672825763&mode=inline&blockId=1gvk5dc75467db3d24678b08027409b5b8611" target="_blank" height="420px" width="360px">View Image</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <b><p><a href="http://127.0.0.1:3002/HOME.HTM">HOME</a></p></b>
+    </footer>
+</body>
+</html>

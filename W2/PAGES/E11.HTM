@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        #idk{
+            padding-right: 100px;
+        }
+        #id{
+            padding-left: 7px;
+        }
+        h6{
+            text-align: left;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: glow 2s infinite alternate;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header h1 {
+            font-size: 2rem;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff004c, 0 0 20px #ff004c; }
+            to { text-shadow: 0 0 20px #ff004c, 0 0 40px #ff004c; }
+        }
+        .main-section {
+            text-align: center;
+            margin: 5rem 2rem;
+        }
+        .main-section h2 {
+            font-size: 3rem;
+            animation: slideIn 1.5s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        i{
+            color: plum;
+            display: flex;
+            animation: slideIn 1.5s ease-out;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+        }
+        .footer {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        a {
+            color: #ff4ccd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ff004c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>VAIVASWAT</h1>
+        <nav>
+             <a href="#projects">About</a>
+        </nav>
+    </header>
+    <section class="main-section" id="projects">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aWOUSR1lrp8?si=SrRsanUEn5ozfR7t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <div class="card">
+            <h3>Nissan VQ35DE/HR</h3>
+            <p>The **Nissan VQ35DE and VQ35HR** are 3.5-liter V6 engines from the acclaimed VQ family, known for their smooth power delivery and strong performance pedigree. The **VQ35DE**, introduced in the early 2000s, features an all-aluminum construction with DOHC and variable valve timing, producing up to 298 horsepower in some trims. It powered a wide range of vehicles including the **350Z**, **Altima**, **Maxima**, and several Infiniti models.
+The **VQ35HR** ("High Rev") succeeded the DE in 2007 with significant upgrades: a higher redline (7,500 rpm), dual intake and exhaust variable valve timing, a reinforced block, and a symmetrical intake manifold. These changes improved breathing, durability, and responsiveness, pushing output to around **306 horsepower**. While both engines are revered, the HR is often favored for its refinement and tuning potential, making it a staple in performance builds and track-day warriors alike.
+</p>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/6/6f/Nissan_VQ35DE_engine_001.jpg" target="_blank" height="420px" width="360px">View Image</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <b><p><a href="http://127.0.0.1:3002/HOME.HTM">HOME</a></p></b>
+    </footer>
+</body>
+</html>

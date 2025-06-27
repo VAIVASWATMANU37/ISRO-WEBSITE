@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        #idk{
+            padding-right: 100px;
+        }
+        #id{
+            padding-left: 7px;
+        }
+        h6{
+            text-align: left;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: glow 2s infinite alternate;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header h1 {
+            font-size: 2rem;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff004c, 0 0 20px #ff004c; }
+            to { text-shadow: 0 0 20px #ff004c, 0 0 40px #ff004c; }
+        }
+        .main-section {
+            text-align: center;
+            margin: 5rem 2rem;
+        }
+        .main-section h2 {
+            font-size: 3rem;
+            animation: slideIn 1.5s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        i{
+            color: plum;
+            display: flex;
+            animation: slideIn 1.5s ease-out;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+        }
+        .footer {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        a {
+            color: #ff4ccd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ff004c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>VAIVASWAT</h1>
+        <nav>
+             <a href="#projects">About</a>
+        </nav>
+    </header>
+    <section class="main-section" id="projects">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QzbHDp5tsZ0?si=D_k0Av6rdSzLx6fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <div class="card">
+            <h3>Volkswagen EA888</h3>
+            <p>The Volkswagen EA888 is a 2.0-liter turbocharged inline-four engine that exemplifies German engineering balance—offering impressive performance, efficiency, and everyday usability. Built with a cast iron block and aluminum DOHC cylinder head, it features direct injection, variable valve timing, and a robust turbocharger. Power outputs range from around 170 to over 300 horsepower across its generations, with the latest Evo 5 variant introducing hybrid-ready enhancements and cutting-edge fuel delivery systems. Found in vehicles like the Golf GTI, Audi A3, and Skoda Octavia RS, the EA888 is a tuner's dream, known for both reliability and exceptional tuning potential.</p>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqQ51bxXONOrimhly72Da8dM6ruMez310eQg&s" target="_blank" height="420px" width="360px">View Image</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <b><p><a href="http://127.0.0.1:3002/HOME.HTM">HOME</a></p></b>
+    </footer>
+</body>
+</html>

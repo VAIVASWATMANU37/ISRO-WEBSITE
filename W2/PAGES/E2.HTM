@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        #idk{
+            padding-right: 100px;
+        }
+        #id{
+            padding-left: 7px;
+        }
+        h6{
+            text-align: left;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: glow 2s infinite alternate;
+            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header h1 {
+            font-size: 2rem;
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff004c, 0 0 20px #ff004c; }
+            to { text-shadow: 0 0 20px #ff004c, 0 0 40px #ff004c; }
+        }
+        .main-section {
+            text-align: center;
+            margin: 5rem 2rem;
+        }
+        .main-section h2 {
+            font-size: 3rem;
+            animation: slideIn 1.5s ease-out;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        i{
+            color: plum;
+            display: flex;
+            animation: slideIn 1.5s ease-out;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+        }
+        .footer {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        a {
+            color: #ff4ccd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ff004c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>VAIVASWAT</h1>
+        <nav>
+             <a href="#projects">About</a>
+        </nav>
+    </header>
+    <section class="main-section" id="projects">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SyUWjnBtgV4?si=zwdjoE-cAzXefcot" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="card">
+            <h3>RB26DETT</h3>
+            <p>The RB26DETT isn’t just an engine—it’s a mechanical icon that roared to life through Nissan’s pursuit 
+                of performance perfection. With its 2.6-liter inline-six configuration and twin turbochargers, it 
+                delivered not only exhilarating power but a symphony of sound that etched itself into the hearts of 
+                enthusiasts. While officially rated at 276 horsepower due to Japan’s “gentleman’s agreement,” this 
+                engine often exceeded expectations, especially when unshackled by tuners. It revved eagerly to an 
+                8,000 rpm redline, its individual throttle bodies and symmetrical port layout producing crisp 
+                throttle response and a unique audio signature. 
+                Beneath its cast-iron block and forged steel internals lay a blueprint for potential. Designed for 
+                durability and speed, the RB26DETT became a foundation for countless performance builds, often 
+                reaching well over 1,000 horsepower with the right tuning. Its fame surged with the Skyline GT-R 
+                models it powered—particularly the R32, R33, and R34—each one elevating its status with racing 
+                success and street credibility. The R32, dubbed “Godzilla,” stormed through Group A touring car 
+                races with the RB26DETT as its battle cry, securing 29 consecutive victories in Japan’s touring car 
+                championship and cementing its legacy. Beyond the track, the engine earned its stripes among 
+                grassroots tuners and professional builders alike. From drift competitions in Japan to drag racing 
+                in the United States, it proved to be incredibly versatile and resilient. Its popularity wasn’t just 
+                about performance—it was about personality. The RB26DETT became a symbol of an era where precision
+                engineering and analog soul met, where every rev was a reminder of how machines could stir emotion. 
+                To fans and drivers around the world, it wasn’t just a feat of engineering—it was a part of their 
+                identity.
+            </p>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjz6NH-YICjHvK_ZXs0FlWriaQJnotiiP6pA&s" target="_blank" height="420px" width="360px">View Image</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <b><p><a href="http://127.0.0.1:3002/HOME.HTM">HOME</a></p></b>
+    </footer>
+</body>
+</html>
